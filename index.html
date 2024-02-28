@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <img src="images/logo.png" alt="Logo Alura" class="logo_alura">
+        <section class="principal">
+            <input type="text" id="texto" class="input-padron" required placeholder="Ingrese el texto aqui">
+            <div class="warning">
+                <img src="images/bi_exclamation-circle-fill.png" alt="exclamation" class="exclamation_icon">
+                <p class="exclamation_text">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="container_bottons">
+                <button onclick="encriptar();" class="boton_encriptar">Encriptar</button>
+                <button onclick="desencriptar();" class="boton_desencriptar">Desencriptar</button>
+            </div >
+        </section>
+    
+        <section class="encripted">
+            <img id="mi_imagen" src="images/lupa.png" alt="sin mensajes">
+            <p id="aviso1"><strong>Ningun mensaje fue encontrado</strong></p>
+            <p id="aviso2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <p id="textoEncriptado" style="display:none;">asdasdasd</p>
+            <button id="botonCopiar" onclick="copiarTexto(); " style="display:none;">Copiar</button>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="footer">
+            <p><strong>Creado por: Gonzalo Gabriel Cazal Mancuello</strong></p>
+            <p>27/02/24</p>
+        </div>
+    </footer>
+    
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>
